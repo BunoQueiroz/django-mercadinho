@@ -29,7 +29,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'produtos'
+    'produtos',
+    'pessoa'
 ]
 
 MIDDLEWARE = [
@@ -68,8 +69,12 @@ WSGI_APPLICATION = 'mercadinho.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'elenidb',
+        'USER': 'postgres',
+        'HOST': 'localhost',
+        'PASSWORD': 'Bruno2022',
+        'PORT': '5433',
     }
 }
 
