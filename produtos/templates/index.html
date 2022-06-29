@@ -1,11 +1,55 @@
 {% extends 'partials/base.html' %}
+{% load static %}
+    {% block content %}
+    
+    {% include 'partials/header.html' %}
+    <main>
+        <h1 class="titulo-principal">Seja Bem Vindo!</h1>
+        <section class="doces">
+            <h4 class="apresenta-produtos">Temos uma grande variedades para os amanates de doces e guloseimas</h4>
+            <div id="carouselExampleSlidesOnly" class="carousel slide main-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'fotos/chocolate_garoto.jpg' %}" class="d-block" alt="Caixa de chocolate garoto">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'fotos/pote_sorvete.jpg' %}" class="d-block" alt="Sorvete">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'fotos/bolo.png' %}" class="d-block" alt="bolo fofo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'fotos/biscoito_richester.jpg' %}" class="d-block" alt="Biscoito Richester">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-{% block content %}
+        <section class="utilitarios">
+            <h4 class="apresenta-produtos">Itens que toda casa precisa</h4>
+            <div id="carouselExampleSlidesOnly" class="carousel slide main-carousel" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{% static 'fotos/chocolate_garoto.jpg' %}" class="d-block" alt="Caixa de chocolate garoto">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'fotos/pote_sorvete.jpg' %}" class="d-block" alt="Sorvete">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'fotos/bolo.png' %}" class="d-block" alt="bolo fofo">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{% static 'fotos/biscoito_richester.jpg' %}" class="d-block" alt="Biscoito Rainha">
+                    </div>
+                </div>
+            </div>
+            <div class="descreve-utilitarios">
+                <p>Diversos itens para higiene pessoal, como cremes dentais, escovas de dentes, desodorantes e muito mais.</p>
+                <p>Além de utilitarios para diversas ocasiões. Por exemplo, fita isolante, cola maluca e álcool.</p>
+                <p>Sem contar com alguns eletrônicos como carregador de celular e fones de ouvido.</p>
+            </div>
+        </section>
 
-{% include 'partials/navbar.html' %}
-
-<h3>E lá vamos nós</h3>
-
-{% include 'partials/footer.html' %}
-
+    </main>
+    {% include 'partials/footer.html' %}
 {% endblock %}

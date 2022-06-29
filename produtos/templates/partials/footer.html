@@ -1,5 +1,25 @@
-<footer>
-    <section>
-            
-    </section>
+<footer class="rodape">
+    <form action="POST" class="area-contato">
+        <div class="mb-3">
+            <label for="Name" class="form-label">Nome Completo</label>
+            <input type="text" class="form-control input-format" id="Name" placeholder="Seu Nome Completo" required>
+        </div>
+        <div class="mb-3">
+            <label for="Email" class="form-label">Endereço de Email</label>
+            <input type="email" class="form-control input-format" id="Email" placeholder="email@dominio.com" required>
+        </div>
+        <div class="mb-3">
+            <label for="Wpp" class="form-label">WhatsApp para contato</label>
+            <input type="number" class="form-control input-format" id="Wpp" placeholder="(XX) XXXXX-XXXX" required>
+        </div>
+        <div class="mb-3">
+            <label for="msg" class="form-label">Escreva a sua mensagem!</label>
+            <textarea name="message" id="msg" cols="30" class="form-control input-format" rows="8"></textarea>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="Check">
+            <label class="form-check-label" for="Check">Guardar dados</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
 </footer>
